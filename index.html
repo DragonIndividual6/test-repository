@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>天気アプリ</title>
+  <link rel="stylesheet" href="weather-body.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>天気アプリ</h1>
+
+    <form id="weatherForm">
+      <select id="prefSelect" required>
+        <option value="" disabled selected>東北地方を選択</option>
+        <option value="40.8244,140.7400">青森市</option>
+        <option value="39.7036,141.1527">盛岡市</option>
+        <option value="39.7186,140.1024">秋田市</option>
+        <option value="38.2682,140.8694">仙台市</option>
+        <option value="38.2404,140.3633">山形市</option>
+        <option value="37.7503,140.4676">福島市</option>
+      </select>
+
+      <button type="submit">検索</button>
+    </form>
+
+    <div id="result"></div>
+
+  </div>
+
+  <script src="weather2.js"></script>
+</body>
+
+</html>
